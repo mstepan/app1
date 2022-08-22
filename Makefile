@@ -30,7 +30,7 @@ lint:
 .PHONY:lint
 
 build: fmt lint
-	go build -o hello
+	go build -o bin/hello
 .PHONY:build
 
 run: build
@@ -50,7 +50,6 @@ release: fmt lint
 # Clean up all artifacts
 #
 clean:
-	rm -rf hello
 	rm -rf bin/*
 .PHONY:clean
 

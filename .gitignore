@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+hello
 
 # Ignore bin folder
 bin
