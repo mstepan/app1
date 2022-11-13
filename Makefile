@@ -7,7 +7,7 @@
 binary_name = app1
 
 #
-# Install all required for build depedndencies
+# Install all required for build dependencies
 #
 preinstall:
 	go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.48.0
@@ -30,11 +30,11 @@ lint:
 .PHONY:lint
 
 build: fmt lint
-	go build -o bin/hello
+	go build -o bin/app1
 .PHONY:build
 
 run: build
-	./hello
+	bin/app1
 .PHONY:run
 
 #
